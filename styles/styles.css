@@ -1,0 +1,111 @@
+/* CSS RESET */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* CSS STYLES */
+
+body {
+	background-color: hsl(216, 12%, 8%);
+	position: relative;
+	width: auto;
+	min-height: 100vh;
+	font-family: "Overpass", sans-serif;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.card {
+	position: relative;
+	margin: auto;
+	width: 500px;
+	background-color: hsl(213, 19%, 18%);
+	border-radius: 50px;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.star-bg {
+	background-color: hsl(215, 10%, 32%);
+	display: inline-block;
+	border-radius: 50px;
+	padding: 15px;
+	line-height: 0;
+}
+
+.star {
+	padding: 0;
+	margin: 0;
+	line-height: 0;
+}
+
+.title {
+	margin-bottom: 10px;
+	color: white;
+}
+
+.description {
+	line-height: 1.2;
+	color: #fff4;
+	font-size: 20px;
+}
+
+.rating {
+	display: flex;
+	justify-content: space-between;
+}
+
+.rating-score {
+	background-color: hsl(215, 10%, 32%);
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	cursor: pointer;
+}
+
+.rating-score:hover {
+	color: white;
+	text-decoration: none;
+	background-color: hsl(25, 97%, 53%);
+}
+
+.rating-score:active {
+	color: white;
+	text-decoration: none;
+	background-color: orange;
+}
+
+.submit {
+	cursor: pointer;
+	width: 100%;
+	color: hsl(25, 97%, 53%);
+	font-size: 18px;
+	border-radius: 50px;
+	padding: 10px 0px;
+	letter-spacing: 3px;
+}
+
+button:hover {
+	background-color: white;
+	text-decoration: none;
+	color: orange;
+}
+
+button:active {
+	color: white;
+	text-decoration: none;
+	background-color: hsl(25, 97%, 53%);
+}
